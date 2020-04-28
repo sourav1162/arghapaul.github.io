@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style.css"/>
+        <script src="https://kit.fontawesome.com/b7055a6ea5.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    </head>
+    <body>
+
+        <div class="back-image"></div>
+        <div class="back-image-cover">
+                <h1 class="head-tag">Custom Responsive Design</h1>
+            <h2 class="head-tag-2">Techtuber Blog</h2>
+            <div class="get-start-button">
+                <p>Get Start</p>
+            </div>
+        </div>
+        <div class="sec-container"></div>
+        <div class="menu_list" id="menu_list_id">
+            <a class="logo-name" href="index.html">
+                <div class="my-logo"></div>
+            </a>
+            <div class="menu-icon">
+                <i class="fas fa-bars"  onclick="responsive_menu()"></i>
+            </div>
+			<ul id="ul_id">
+				<li><a href="#" >Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">contact</a></li>
+            </ul> 
+        </div>
+        <script>
+            window.onscroll = function(){
+            checkScrooll()
+            };
+            function responsive_menu(){
+                var e = document.getElementById("ul_id").style;
+                if(e.height < "250px"){
+                    $('#ul_id').css({"height":"250px","padding-top":"20px"});
+                    $('.back-image-cover').css("filter","brightness(20%)");  
+                    $('.back-image').css("filter","brightness(20%)"); 
+                    $('.svg-shape').css("filter","brightness(20%)");    
+                    $('.sec-container').css("filter","brightness(20%)"); 
+                }else{
+                    $('#ul_id').css({"height":"0px","padding-top":"0px"});
+                    $('.back-image-cover').css("filter","brightness(100%)");
+                    $('.back-image').css("filter","brightness(100%)"); 
+                    $('.svg-shape').css("filter","brightness(100%)"); 
+                    $('.sec-container').css("filter","brightness(100%)"); 
+                    
+                }
+            }
+            function checkScrooll(){
+                if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+                    document.getElementById("menu_list_id").style.backgroundColor = "#0083FF";
+                    document.getElementById("menu_list_id").style.height = "70px";
+                }
+                else{
+                    document.getElementById("menu_list_id").style.backgroundColor = "rgba(38, 38, 38,0.6)";
+                    document.getElementById("menu_list_id").style.height = "70px";
+                }
+            }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('li:nth-child(2)').click(function(){
+                    $('html,body').animate({scrollTop:800},800);     
+                }); 
+                $('.get-start-button').click(function(){
+                    $('html,body').animate({scrollTop:800},800);
+                });
+                $('li:nth-child(1)').click(function(){
+                    $('html,body').animate({scrollTop:0},800);
+                });
+                
+
+            });
+        </script>
+    </body>
+</html>
