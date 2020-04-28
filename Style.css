@@ -194,7 +194,7 @@ body{
     }
     
 }
-@media (max-width:900px){
+@media (max-width:895px){
     
     .menu_list a{
         font-size: 20px;
@@ -231,7 +231,7 @@ body{
     }
 }
 
-@media(max-width:750px){
+@media(max-width:1200px){
 
     *{padding:0;}
     .menu_list{
