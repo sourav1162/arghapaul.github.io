@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .bg-image{
-	background-image: url('images/back-image2.jpg');
+	background-image: url('back-image2.jpg');
 	height:670px;
 	width: 100%;
 	background-attachment: fixed;
