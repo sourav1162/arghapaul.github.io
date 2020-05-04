@@ -2,10 +2,18 @@
 	margin: 0;
 	padding: 0;
 }
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
 .bg-image{
 	background-image: url('back-image2.jpg');
 	height:670px;
 	width: 100%;
+	background-position: center;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }
@@ -15,7 +23,6 @@
 .bg-image ul li{
 	padding-right: 30px;
 }
-
 .navbar-background-color{
 	background-color: #2690FA;
 	transition: all .5s;
@@ -169,6 +176,7 @@
 	line-height: 1.5;
 	font-weight: bold;
 }
+
 .bg-image ul{
 	padding-right: 0px;
 }
