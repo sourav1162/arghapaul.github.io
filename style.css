@@ -2,9 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-body{
-	overflow-x: hidden;
-}
 .bg-image{
 	background-image: url('back-image2.jpg');
 	height:670px;
